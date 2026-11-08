@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
 }
 .wrap { max-width: 680px; margin: 0 auto; padding: 0 16px 64px; }
-.glow { position: relative; }
+.glow { position: relative; isolation: isolate; }
 .glow::before {
   content: ""; position: absolute; z-index: -1; pointer-events: none;
   left: 50%; top: 50%; width: 760px; height: 460px; max-width: 160vw;
